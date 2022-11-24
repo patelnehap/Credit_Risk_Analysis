@@ -11,4 +11,51 @@ In order balance out the classifications to allow for more meaningful prediction
 These algorithms include RandomOverSampler, SMOTE, ClusterCentroids, SMOTEENN, BalancedRandomForestClassifier, and EasyEnsembleClassifier.
 
 ## Results:
+The results for the six machine learning models including their respective balanced accuracy, precision, and recall scores are as follows:
+
+### Naive Random Sampling:
+
+<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+1. Balanced Accuracy: 0.6612700484668286
+2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+3. Recall: High/Low risk = .66/.67
+
+### SMOTE Oversampling
+
+<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+1. Balanced Accuracy: 0.6303296388959394
+2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+3. Recall: High/Low risk = .62/.64
+
+### SMOTEEN
+
+<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+1. Balanced Accuracy: 0.6303296388959394
+2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+3. Recall: High/Low risk = .62/.64
+
+### Random Forest Sampler
+
+<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+1. Balanced Accuracy: 0.6303296388959394
+2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+3. Recall: High/Low risk = .62/.64
+
+### Easy Ensemble
+
+<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
+1. Balanced Accuracy: 0.6303296388959394
+2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
+3. Recall: High/Low risk = .62/.64
+
+## Summary
+
+In conclusion, credit-risk is a difficult thing to predict, even for advanced machine learning algorithms. 
+While the Easy Ensemble AdaBoost Classifier model had the highest overall accuracy, this was largely due to the fact that the dataset was so radically unbalanced. 
+Even when it's balanced accuracy and average F-score were above 90%, it's F-score for high-risk prediction was no better than 0.16. 
 

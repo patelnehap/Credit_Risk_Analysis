@@ -19,7 +19,7 @@ Data Split:
 
 ### Naive Random Sampling:
 
-<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/NaiveRndmSampling.JPG"  alt="Naive Random Sampling"  title="Naive Random Sampling" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/Naive%20Rndm%20Sampling.JPG"  alt="Naive Random Sampling"  title="Naive Random Sampling" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
 1. Balanced Accuracy: 0.66
 2. Precision: The precision is low for High-risk loans and is very good for Low-risk loans.

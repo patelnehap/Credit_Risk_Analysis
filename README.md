@@ -13,45 +13,55 @@ These algorithms include RandomOverSampler, SMOTE, ClusterCentroids, SMOTEENN, B
 ## Results:
 The results for the six machine learning models including their respective balanced accuracy, precision, and recall scores are as follows:
 
+Data Split:
+
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/Data_Split.JPG"  alt="Data Split"  title="Data Split" style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 ### Naive Random Sampling:
 
-<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/NaiveRndmSampling.JPG"  alt="Naive Random Sampling"  title="Naive Random Sampling" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-1. Balanced Accuracy: 0.6612700484668286
-2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-3. Recall: High/Low risk = .66/.67
+1. Balanced Accuracy: 0.66
+2. Precision: The precision is low for High-risk loans and is very good for Low-risk loans.
+3. Recall: High/Low risk = .72/.60
+4. F1 score : High/Low risk = .02/.75 (Low F1 score suggests a high number of False Positives in this model. Data needs to be resampled using Oversampling model to create a better model for accuracy.)
 
 ### SMOTE Oversampling
 
-<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/SMOTE.JPG"  alt="SMOTE"  title="SMOTE" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-1. Balanced Accuracy: 0.6303296388959394
-2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-3. Recall: High/Low risk = .62/.64
+1. Balanced Accuracy: 0.66
+2. Precision: The precision is low for High-risk loans and is very good for Low-risk loans.
+3. Recall: High/Low risk = .62/.69
+4. F1 score : High/Low risk = .02/.82(Low F1 score suggests a high number of False Positives in this model. Data needs to be resampled using Oversampling model to create a better model for accuracy.)
 
 ### SMOTEEN
 
-<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/SMOTEEN.JPG"  alt="SMOTEEN"  title="SMOTEEN" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-1. Balanced Accuracy: 0.6303296388959394
-2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-3. Recall: High/Low risk = .62/.64
+1. Balanced Accuracy: 0.64
+2. Precision: The precision is low for High-risk loans and is very good for Low-risk loans.
+3. Recall: High/Low risk = .72/.54
+4. F1 score : High/Low risk = .02/.72 (Low F1 score suggests a high number of False Positives in this model. Data needs to be resampled using Oversampling model to create a better model for accuracy.)
 
 ### Random Forest Sampler
 
-<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/RndmFrst.JPG"  alt="Random Forest Sampler"  title="Random Forest Sampler" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-1. Balanced Accuracy: 0.6303296388959394
-2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-3. Recall: High/Low risk = .62/.64
+1. Balanced Accuracy: 0.67
+2. Precision: The precision is low for High-risk loans and is very good for Low-risk loans.(Precision of 1 indicates that this model will not produce any false positives.)
+3. Recall: High/Low risk = .35/1.0
+4. F1 score : High/Low risk = .50/1.00 (F1 score of 1 suggests that this is a very good model to predict credit risk accuracy).
+
 
 ### Easy Ensemble
 
-<img   src="https://github.com/patelnehap/Amazon_Vine_Analysis/blob/main/Images/GreaterThan20.JPG"  alt="Greater Than 20"  title="Greater than 20" style="display: inline-block; margin: 0 auto; max-width: 300px">
+<img   src="https://github.com/patelnehap/Credit_Risk_Analysis/blob/main/Images/EasyEnsemble.JPG"  alt="Easy Ensemble"  title="Easy Ensemble" style="display: inline-block; margin: 0 auto; max-width: 300px">
 
-1. Balanced Accuracy: 0.6303296388959394
-2. Precision: The precision is low for High-risk loans and is high for Low-risk loans.
-3. Recall: High/Low risk = .62/.64
+1. Balanced Accuracy: 0.92
+2. Precision: The precision is low for High-risk loans and is perfect 1 for Low-risk loans.
+3. Recall: High/Low risk = .89/.94
+4. F1 score : High/Low risk = .16/.97
 
 ## Summary
 
